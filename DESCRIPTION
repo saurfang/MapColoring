@@ -6,6 +6,14 @@ Date: 2017-02-02
 Author: Philipp Hunziker
 Maintainer: Philipp Hunziker <hunzikp@gmail.com>
 Description: Assigns colors to polygon maps using a minimal number of colors while ensuring no adjacent features have the same color. If provided more than the minimal required number of colors, selects colors in a manner that maximizes color contrasts between adjacent polygons. Also, implements the DSATUR graph coloring algorithm in R.
-Imports: rgeos, sp, methods
+Imports: 
+    rgeos,
+    sp,
+    methods,
+    Rcpp,
+    RcppArmadillo
 Suggests: CEoptim
 License: GPL-3
+LinkingTo: 
+    Rcpp,
+    RcppArmadillo

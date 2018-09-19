@@ -1,3 +1,5 @@
 exportPattern("^[[:alpha:]]+")
 importFrom("grDevices", "col2rgb")
 importFrom("methods", "is")
+useDynLib('MapColoring', .registration = TRUE)
+importFrom('Rcpp', 'sourceCpp')
